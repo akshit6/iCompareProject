@@ -79,14 +79,14 @@
       <img src="{{ url_for('static', filename='pics/amazon.png') }}" class="img-fluid" style="border-radius: 3rem; width: 100%;margin: auto;padding: 3%;">
       <h3 class="class-title" style="text-align: center;">Product name:{%if amazon_name%}{{amazon_name}} {% endif %}</h3>
       <hr>
-      <h5 class="class-subtitle">Product info:</h5>
+      <h5 class="class-subtitle" style="text-align: center;color: white;">Product info:</h5>
       {%if amazon_des%}
         {%for des in amazon_des%}
           <p>{{des}}</p>
         {% endfor %}
       {% endif %}
       <hr>
-      <h5 style="text-align: center;">Cost price:{%if amazon_price %}{{amazon_price}} {% endif %} {% if not amazon_price == "Currently unavailable" %}Rupees {% endif %}</h5>
+      <h5 style="text-align: center;color: white;">Cost price:{%if amazon_price %}{{amazon_price}} {% endif %} {% if not amazon_price == "Currently unavailable" %}Rupees {% endif %}</h5>
     </div>
   </div>
     <div class="card cardSet2 text-black">
@@ -94,12 +94,12 @@
       <img src="{{ url_for('static', filename='pics/flipkart2.jpg') }}" class="img-fluid" style="border-radius: 3rem; width: 100%;margin: auto;padding: 3%;">
       <h3 class="class-title" style="text-align: center;">Product name:{{flip_name}}</h3>
       <hr>
-      <h5 class="class-subtitle">Product info:</h5>
+      <h5 class="class-subtitle" style="text-align: center;color: white;">Product info:</h5>
       {% for des in flip_des %}
       <p>{{des}}</p>
       {% endfor %}
       <hr>
-      <h5 style="text-align: center;">Cost price:{{flip_price}} Rupees</h5>
+      <h5 style="text-align: center;color: white;">Cost price:{{flip_price}} Rupees</h5>
     </div>
   </div>
   </div>

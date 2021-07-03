@@ -67,4 +67,3 @@ def amazon_scrapping(product):
 
 
 # print(amazon_scrapping("iphone 7"))
-
